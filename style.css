@@ -270,17 +270,15 @@ a {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
 }
 
-/*
-  TO ADD THE REAL PHOTO:
-  1. Upload a photo file (e.g. sushmit.jpg) to the same GitHub repo as this CSS.
-  2. Replace the rule below with:
-     background-image: url('sushmit.jpg');
-     and delete/hide the <span>SR</span> text in the HTML if you want a clean photo.
-*/
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 
 .photo-placeholder span {
   font-family: 'Space Grotesk', sans-serif;
